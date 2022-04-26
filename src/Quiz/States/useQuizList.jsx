@@ -19,6 +19,7 @@ const useQuizList = () => {
                 const workbook = XLSX.read(buffer, { type : 'buffer' });
                 const sheet = workbook.Sheets['Quiz'];
 
+                let isNext = false;
                 let row = 2;
                 let quizList = [];
 
@@ -40,7 +41,10 @@ const useQuizList = () => {
                         }); 
                     }
                     ++row;
-                } while( !! quiz && row < 50);
+                    
+                    isNext = quiz !== null;
+
+                } while(isNext);
 
                 setQuizData(quizList.sort(()=> Math.random() - 0.5));
             })
