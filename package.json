@@ -1,5 +1,6 @@
 {
   "name": "sorayusya-quiz",
+  "homepage": "https://yuk1game.github.io/sorayusya-quiz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && git add . && git commit -m deploy && git push origin main && git subtree push --prefix build/ origin gh-pages"
   },
   "eslintConfig": {
     "extends": [
