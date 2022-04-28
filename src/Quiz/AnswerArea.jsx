@@ -1,9 +1,18 @@
 import styled from 'styled-components';
+import Answer from '../Quiz/Answers/Answer';
 
-const AnswerArea = ({ children, ...props }) => {
+const AnswerArea = ({ answers, answeredIndex, onClickAnswer, ...props }) => {
     return (
         <AnswerAreaStyled {...props}>
-            { children }
+            {answers?.map(({ label, isCollect }, index) => (
+                <Answer
+                    key={ index }
+                    label={['A', 'B', 'C', 'D'][index]}
+                    answered={ index === answeredIndex }
+                    isCollect={ isCollect }
+                    onClick={() => onClickAnswer(label, isCollect, index)}
+                    >{ label }</Answer>
+            ))}
         </AnswerAreaStyled>
     )
 }

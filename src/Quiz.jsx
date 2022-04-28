@@ -34,20 +34,10 @@ const Quiz = ({ quiz, collectAnswer, dummyAnswers, quizCount, currentQuizNumber,
 
     return (
         <QuizStyled {...props}>
-            <QuizCounter>第{currentQuizNumber}門/{ quizCount }門</QuizCounter>
+            <QuizCounter>第{ currentQuizNumber }門/{ quizCount }門</QuizCounter>
             <QuizWindowStyled>{ quiz }</QuizWindowStyled>
             <ProgressBarWithStyled second={ 15 } onFinish={ onFinish } />
-            <AnswerArea>
-                {answers?.map(({ label, isCollect }, index) => (
-                    <Answer
-                        key={ index }
-                        label={['A', 'B', 'C', 'D'][index]}
-                        answered={ index === answeredIndex }
-                        isCollect={ isCollect }
-                        onClick={() => onClickAnswer(label, isCollect, index)}
-                        >{ label }</Answer>
-                ))}
-            </AnswerArea>
+            <AnswerArea answers={ answers } answeredIndex={ answeredIndex } onClickAnswer={ onClickAnswer } />
         </QuizStyled>
     )
 }
