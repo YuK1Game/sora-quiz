@@ -1,6 +1,6 @@
 {
-  "name": "sorayusya-quiz",
-  "homepage": "https://yuk1game.github.io/sorayusya-quiz",
+  "name": "sora-quiz",
+  "homepage": "https://yuk1game.github.io/sora-quiz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,5 +44,8 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
+  },
+  "volta": {
+    "node": "16.15.0"
   }
 }
