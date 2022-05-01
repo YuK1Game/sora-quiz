@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/sora-quiz/static/css/main.202f76c9.css",
-    "main.js": "/sora-quiz/static/js/main.2a13f5b8.js",
+    "main.js": "/sora-quiz/static/js/main.4aa1f054.js",
     "static/js/787.d3ae1708.chunk.js": "/sora-quiz/static/js/787.d3ae1708.chunk.js",
-    "static/media/quiz.xlsx": "/sora-quiz/static/media/quiz.49ba938b63f9cafcd779.xlsx",
+    "static/media/quiz.xlsx": "/sora-quiz/static/media/quiz.35c06f876200c44bb2a6.xlsx",
     "index.html": "/sora-quiz/index.html",
     "main.202f76c9.css.map": "/sora-quiz/static/css/main.202f76c9.css.map",
-    "main.2a13f5b8.js.map": "/sora-quiz/static/js/main.2a13f5b8.js.map",
+    "main.4aa1f054.js.map": "/sora-quiz/static/js/main.4aa1f054.js.map",
     "787.d3ae1708.chunk.js.map": "/sora-quiz/static/js/787.d3ae1708.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.202f76c9.css",
-    "static/js/main.2a13f5b8.js"
+    "static/js/main.4aa1f054.js"
   ]
 }
